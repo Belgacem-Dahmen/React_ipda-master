@@ -14,20 +14,20 @@ const App = () => {
 
   return (
     <Routes>
-        <Route path='/' element={<GuestLayout />}>
-          <Route path='/' element={<LandingPage />}/>
-          <Route path='login' element={<Login />}/>
-          <Route path='register' element={<Register />}/>
-          <Route path='forgot' element={<ForgotPassword />}/>
-        </Route>
-        <Route path='dashboard' element={<AuthLayout />}>
-          
-          <Route path='services' element={<index />}/>
-          <Route path='register' element={<Register />}/>
-          <Route path='forgot' element={<ForgotPassword />}/>
-        </Route>
+      <Route path='/' element={<GuestLayout />}>
+        <Route path='/' element={<LandingPage />} />
+        <Route path='login' element={<Login />} />
+        <Route path='register' element={<Register />} />
+        <Route path='forgot' element={<ForgotPassword />} />
+      </Route>
+      <Route path='dashboard' element={<AuthLayout />}>
 
-  </Routes>
+        <Route path='demandes' element={<index />} />
+        <Route path='register' element={<Register />} />
+        <Route path='forgot' element={<ForgotPassword />} />
+      </Route>
+
+    </Routes>
   );
 };
 
